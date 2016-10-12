@@ -21,11 +21,11 @@ Docker for usbarmory
  - `uImage`
  - `4.7.2.tar.gz`
 - FROM YOUR USBARMORY
-- You have to move the new 'uImage' in the '/boot/' directory (it's a good idea to make a copy of the original file):
+- You have to move the new `uImage` in the `/boot/` directory (it's a good idea to make a copy of the original file):
   - `sudo mv /boot/uImage /boot/uImage.orig`
   - `sudo mv /path_git_clone/uImage /boot/uImage`
   - `sudo chown -R root.root /boot/uImage`
-- You have to decompress '4.7.2.tar.gz' in the '/lib/modules/' directory (it's a good idea to make a copy of the original dir):
+- You have to decompress `4.7.2.tar.gz` in the `/lib/modules/` directory (it's a good idea to make a copy of the original dir):
   - `sudo mv /lib/modules/4.7.2 /lib/modules/4.7.2.orig`
   - `sudo tar -zxvf /path_git_clone/4.7.2.tar.gz -C /lib/modules/`
   - `sudo chown -R root.root /lib/modules/4.7.2`
@@ -33,9 +33,9 @@ Docker for usbarmory
 
 ## Second: The 'Hard way'
 - NOT FROM YOUR USBARMORY BUT FROM YOUR SYSTEM OR VM
-- I suggest to use a VM (I've tried to cross compile with a docker container but without results -sometimes the concept of kernel sharing is a pain in the butt ehehe))
-- I suggest to use the file '.config' that you find in the git repository
-- You can follow the istructions that you find at uri 'https://github.com/inversepath/usbarmory/wiki/Preparing-a-bootable-microSD-image'. You have to follow ONLY the sections:
+- I suggest to use a VM (I`ve tried to cross compile with a docker container but without results -sometimes the concept of kernel sharing is a pain in the butt ehehe))
+- I suggest to use the file `.config` that you find in the git repository
+- You can follow the istructions that you find at uri "https://github.com/inversepath/usbarmory/wiki/Preparing-a-bootable-microSD-image". You have to follow ONLY the sections:
 	- Prerequisites
 	- Toolchain
 	- Kernel: Linux 4.7.2 (use the .config of the git repo)
