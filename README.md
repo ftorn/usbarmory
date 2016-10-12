@@ -3,14 +3,14 @@ Docker for usbarmory
 
 ## Intro
 
-You find three dirs:
+- You find three dirs:
         - docker, the files needed to install 'docker'
         - tor, Dockerfile related to the application 'Tor Anonymizing Middlebox' - https://github.com/inversepath/usbarmory/wiki/Applications
         - electrum, Dockerfile related to the application 'Bitcoin Wallet' - 'https://github.com/inversepath/usbarmory/wiki/Applications'
 
 ## Installation
 
-You can install docker 1.12.1 in two steps:
+- You can install docker 1.12.1 in two steps:
 - First, recompile the usbarmory kernel (overlayFS support)
 	- Easy way: I've recompiled the kernel to support docker and you find the files in the git repository
 	- Hard way: You have to recompile the kernel to support docker
