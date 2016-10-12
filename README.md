@@ -4,9 +4,9 @@ Docker for usbarmory
 ## Intro
 
 - You find three dirs:
-        - docker, the files needed to install 'docker'
-        - tor, Dockerfile related to the application 'Tor Anonymizing Middlebox' - https://github.com/inversepath/usbarmory/wiki/Applications
-        - electrum, Dockerfile related to the application 'Bitcoin Wallet' - 'https://github.com/inversepath/usbarmory/wiki/Applications'
+        - docker: the files needed to install 'docker'
+        - tor: Dockerfile related to the application 'Tor Anonymizing Middlebox' - https://github.com/inversepath/usbarmory/wiki/Applications
+        - electrum: Dockerfile related to the application 'Bitcoin Wallet' - 'https://github.com/inversepath/usbarmory/wiki/Applications'
 
 ## Installation
 
@@ -22,13 +22,13 @@ Docker for usbarmory
 	- '4.7.2.tar.gz'
 - FROM YOUR USBARMORY
   You have to move the new 'uImage' in the '/boot/' directory (it's a good idea to make a copy of the original file):
-  `sudo mv /boot/uImage /boot/uImage.orig`
-  `sudo mv /path_git_clone/uImage /boot/uImage`
-  `sudo chown -R root.root /boot/uImage`
-  You have to decompress '4.7.2.tar.gz' in the '/lib/modules/' directory (it's a good idea to make a copy of the original dir):
-  `sudo mv /lib/modules/4.7.2 /lib/modules/4.7.2.orig`
-  `sudo tar -zxvf /path_git_clone/4.7.2.tar.gz -C /lib/modules/`
-  `sudo chown -R root.root /lib/modules/4.7.2`
+  - `sudo mv /boot/uImage /boot/uImage.orig`
+  - `sudo mv /path_git_clone/uImage /boot/uImage`
+  - `sudo chown -R root.root /boot/uImage`
+- You have to decompress '4.7.2.tar.gz' in the '/lib/modules/' directory (it's a good idea to make a copy of the original dir):
+  - `sudo mv /lib/modules/4.7.2 /lib/modules/4.7.2.orig`
+  - `sudo tar -zxvf /path_git_clone/4.7.2.tar.gz -C /lib/modules/`
+  - `sudo chown -R root.root /lib/modules/4.7.2`
 - Reboot usbarmory
 
 ## Second: The 'Hard way'
