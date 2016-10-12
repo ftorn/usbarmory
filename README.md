@@ -4,9 +4,9 @@ Docker for usbarmory
 ## Intro
 
 You find three dirs:
-        -docker, the files needed to install 'docker'
-        -tor, Dockerfile related to the application 'Tor Anonymizing Middlebox' - https://github.com/inversepath/usbarmory/wiki/Applications
-        -electrum, Dockerfile related to the application 'Bitcoin Wallet' - 'https://github.com/inversepath/usbarmory/wiki/Applications'
+        - docker, the files needed to install 'docker'
+        - tor, Dockerfile related to the application 'Tor Anonymizing Middlebox' - https://github.com/inversepath/usbarmory/wiki/Applications
+        - electrum, Dockerfile related to the application 'Bitcoin Wallet' - 'https://github.com/inversepath/usbarmory/wiki/Applications'
 
 ## Installation
 
@@ -18,8 +18,8 @@ You can install docker 1.12.1 in two steps:
 
 ## First: The 'Easy way'
 - You find two files in the github:
-	-'uImage'
-	-'4.7.2.tar.gz'
+	- 'uImage'
+	- '4.7.2.tar.gz'
 - FROM YOUR USBARMORY
   You have to move the new 'uImage' in the '/boot/' directory (it's a good idea to make a copy of the original file):
   `sudo mv /boot/uImage /boot/uImage.orig`
