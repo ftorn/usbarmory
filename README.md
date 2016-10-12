@@ -6,7 +6,7 @@ Docker for usbarmory
 - You find three dirs:
   - docker: the files needed to install 'docker'
   - tor: Dockerfile related to the application "Tor Anonymizing Middlebox" - https://github.com/inversepath/usbarmory/wiki/Applications
-        - electrum: Dockerfile related to the application 'Bitcoin Wallet' - 'https://github.com/inversepath/usbarmory/wiki/Applications'
+  - electrum: Dockerfile related to the application "Bitcoin Wallet" - https://github.com/inversepath/usbarmory/wiki/Applications
 
 ## Installation
 
