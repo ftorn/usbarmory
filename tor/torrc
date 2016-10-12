@@ -1,0 +1,12 @@
+VirtualAddrNetworkIPv4 10.192.0.0/10
+AutomapHostsOnResolve 1
+
+# Transparent proxy
+TransPort 9040
+TransListenAddress 127.0.0.1
+TransListenAddress 10.0.0.1
+
+# DNS
+DNSPort 5353
+DNSListenAddress 127.0.0.1
+DNSListenAddress 10.0.0.1
