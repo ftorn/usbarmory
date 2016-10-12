@@ -4,8 +4,8 @@ Docker for usbarmory
 ## Intro
 
 - You find three dirs:
-        - docker: the files needed to install 'docker'
-        - tor: Dockerfile related to the application 'Tor Anonymizing Middlebox' - https://github.com/inversepath/usbarmory/wiki/Applications
+  - docker: the files needed to install 'docker'
+  - tor: Dockerfile related to the application "Tor Anonymizing Middlebox" - https://github.com/inversepath/usbarmory/wiki/Applications
         - electrum: Dockerfile related to the application 'Bitcoin Wallet' - 'https://github.com/inversepath/usbarmory/wiki/Applications'
 
 ## Installation
@@ -18,10 +18,10 @@ Docker for usbarmory
 
 ## First: The 'Easy way'
 - You find two files in the github:
-	- 'uImage'
-	- '4.7.2.tar.gz'
+ - `uImage`
+ - `4.7.2.tar.gz`
 - FROM YOUR USBARMORY
-  You have to move the new 'uImage' in the '/boot/' directory (it's a good idea to make a copy of the original file):
+- You have to move the new 'uImage' in the '/boot/' directory (it's a good idea to make a copy of the original file):
   - `sudo mv /boot/uImage /boot/uImage.orig`
   - `sudo mv /path_git_clone/uImage /boot/uImage`
   - `sudo chown -R root.root /boot/uImage`
@@ -43,14 +43,14 @@ Docker for usbarmory
 ## Install docker
 - FROM YOUR USBARMORY
 - Add overlay module:
-  `echo "overlay" | sudo tee -a /etc/modules`
+-`echo "overlay" | sudo tee -a /etc/modules`
 - Download docker_engine:
-  `wget https://apt.dockerproject.org/repo/pool/main/d/docker-engine/docker-engine_1.12.1-0~jessie_armhf.deb`
+-`wget https://apt.dockerproject.org/repo/pool/main/d/docker-engine/docker-engine_1.12.1-0~jessie_armhf.deb`
 - Install .deb (it'll give you an error...don't worry you have to modify the systemd file):
-  `sudo dpkg -i docker-engine_1.12.1-0~jessie_armhf.deb`
+-`sudo dpkg -i docker-engine_1.12.1-0~jessie_armhf.deb`
 - Modify file '/lib/systemd/system/docker.service' in this way (you have to use sudo):
-  `ExecStart=/usr/bin/dockerd -H unix:// -s overlay`  
+-`ExecStart=/usr/bin/dockerd -H unix:// -s overlay`  
 - Reload systemd:
-  `sudo systemctl daemon-reload`
+-`sudo systemctl daemon-reload`
 - Try docker:
-  `sudo docker --version`
+-`sudo docker --version`
