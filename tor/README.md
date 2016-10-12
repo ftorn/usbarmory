@@ -18,19 +18,16 @@ TOR for usbarmory
   - Use `start-tor.sh` to start TOR container
 - The TOR container start correctly only if in the output you see these logs:
   
-  `[notice] Tor has successfully opened a circuit. Looks like client functionality is working.`
-  `[notice] Bootstrapped 100%: Done`
+  - `[notice] Tor has successfully opened a circuit. Looks like client functionality is working.`
+  - `[notice] Bootstrapped 100%: Done`
   
 - Use `usbarmory-fw.sh start` to create the iptables rules (you have to modify the script and adapt the VARs to your needed):
 - Try it:
   - FROM HOST:
 	- open your browser and go to "https://check.torproject.org"
-   - FROM USBARMORY
-	- curl https://check.torproject.org
-- Use `tor.sh stop` to:
-	- stop TOR container
-	- remove iptables rules
-
+  - FROM USBARMORY:
+	- curl "https://check.torproject.org"
+	
 ## References
 - https://blog.jessfraz.com/post/routing-traffic-through-tor-docker-container/
 - https://trac.torproject.org/projects/tor/wiki/doc/TransparentProxy
