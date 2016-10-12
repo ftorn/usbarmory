@@ -5,8 +5,8 @@ Electrum for usbarmory
 
 FROM USBARMORY
 - Compile your image
-  `cd /yourpath/electrum`
-  `sudo docker build -t electrum .`
+  - `cd /yourpath/electrum`
+  - `sudo docker build -t electrum .`
 - Use it:
-  `sudo docker run -it electrum`
+  - `sudo docker run -it electrum`
 
